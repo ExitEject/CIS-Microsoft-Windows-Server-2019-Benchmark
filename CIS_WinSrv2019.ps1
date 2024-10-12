@@ -565,7 +565,7 @@ function AccountLockoutThreshold
     Write-Output ( net accounts | Select-String -SimpleMatch 'lockout threshold' )
 
     Write-After ("After hardening: *******                   ")
-    net accounts /lockoutthreshold:3
+    net accounts /lockoutthreshold:6
 
 }
 
